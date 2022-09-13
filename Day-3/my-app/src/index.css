@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+#root {
+  margin: 3rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c2e6f4;
+  width: 100%;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  border-radius: 10px;
+}
+
+#heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.input-area {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.input-box {
+  width: 30%;
+  height: 2.5rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.5rem 5rem;
+  font-size: 0.9rem;
+  background-color: #f37474;
+  color: white;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.images-box {
+  margin-top: 5rem;
+  display: flex;
+  gap: 5rem;
+}
+
+img {
+  width: 8rem;
+}
