@@ -2,13 +2,13 @@
   box-sizing: border-box;
 }
 
-font-family {
-
+body {
+  font-family: "Poppins", sans-serif;
 }
 
+/* Hexadecimal random color generator */
 .colors-container {
   height: 25rem;
-  font-family: "Poppins", sans-serif;
 }
 
 .color-box {
@@ -18,4 +18,38 @@ font-family {
   margin: 0.5rem;
   color: white;
   font-weight: 900;
+}
+
+hr {
+  margin-top: 5rem;
+}
+
+/* User Card */
+
+.user-profile {
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: 900;
+}
+
+.subtitles {
+  color: rgb(96, 91, 91);
+  margin: 2rem 0;
+}
+
+.skills-box {
+  color: white;
+  background-color: aqua;
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+.user-card {
+  margin: 6rem 1rem;
 }
