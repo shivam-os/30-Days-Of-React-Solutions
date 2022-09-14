@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+font-family {
+
+}
+
+.colors-container {
+  height: 25rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.color-box {
+  height: 5rem;
+  text-align: center;
+  padding-top: 1.75rem;
+  margin: 0.5rem;
+  color: white;
+  font-weight: 900;
+}

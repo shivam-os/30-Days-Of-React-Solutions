@@ -1,17 +1,45 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+/* Hexadecimal random color generator */
+const randomHexGenerator = () => {
+  let hexValues = "0123456789ABCDEF";
+  let color = "";
+  for (let i = 0; i < 6 ; i++){
+    let position = Math.floor(Math.random() * 16);
+    color += hexValues[position];
+  }
+  return "#" + color;
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function HexColorBox() {
+  let hexColor = randomHexGenerator();
+
+  return (
+  <div className="color-box" style={{backgroundColor: `${hexColor}`}}>{hexColor}</div>
+  );
+}
+
+function ColorsContainer() {
+  return (
+    <div class="colors-container">
+      <HexColorBox />
+      <HexColorBox />
+      <HexColorBox />
+      <HexColorBox />
+      <HexColorBox />
+    </div>
+  )
+}
+
+/* */
+
+function Page() {
+  return (
+    <ColorsContainer />
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Page />);
