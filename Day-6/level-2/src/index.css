@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* ------ Number Generator ------ */
+
+.number-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.boxes-container {
+  width: 45rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 6rem;
+  width: 6rem;
+  text-align: center;
+  line-height: 6rem;
+  border: 2px solid white;
+  font-size: 2rem;
+  color: white;
+}
+
+/* ------ Hex colors generator ------ */
+.colors-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.colors-box-container {
+  height: 50rem;
+  width: 50rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hex-box {
+  height: 6rem;
+  width: 6rem;
+  text-align: center;
+  line-height: 6rem;
+  border: 2px solid white;
+  font-size: 0.8rem;
+  color: white;
+}
