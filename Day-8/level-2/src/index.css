@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 1rem;
+}
+
+h1, .subtitle {
+  text-align: center;
+}
+
+.container {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+/* ------ Profile Section ------ */
+.profile--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 1rem 3rem;
+  color: #FFFFFF;
+  background-color:darkolivegreen;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px black;
+}
