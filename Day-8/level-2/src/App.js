@@ -1,5 +1,6 @@
 import React from "react";
 import Profile from "./components/Profile.js";
+import Country from "./components/Country.js";
 import {useState} from "react";
 
 export default function App() {
@@ -12,7 +13,7 @@ export default function App() {
 
   const style = {
     backgroundColor: darkMode ? "#0f172a" : "#FFFFFF",
-    color: darkMode ? "#FFFFFF" : "#000000"
+    color: darkMode ? "#FFFFFF" : "#000000",
   }
 
   return (
@@ -22,6 +23,7 @@ export default function App() {
       <hr />
       <Profile handleClick={toggleMode}/>
       <hr />
+      <Country />
     </div>
   );
 }

@@ -23,12 +23,12 @@ h1, .subtitle {
 
 .container {
   margin: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
 /* ------ Profile Section ------ */
-.profile--section {
+.profile--section, .country--section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,4 +42,25 @@ button {
   font-size: 1.2rem;
   font-weight: 700;
   text-shadow: 1px 1px black;
+}
+
+/* ------ Countries Section ------- */
+.country--section {
+  margin: 0;
+  padding-bottom: 5rem;
+}
+
+
+.country {
+  height: 20rem;
+  width: 30rem;
+  box-shadow: 5px 5px black;
+  margin: 3rem 0;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.country-bold {
+  font-weight: 700;
+  font-size: 1.1rem;
 }
